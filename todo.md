@@ -7,3 +7,4 @@
     - Credit Page: Build
     - Credit Page: Test
 ### Complete
+    - Push to GitHub

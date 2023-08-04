@@ -20,13 +20,13 @@ export default {
     data() {
         return {
             loading: true,
-            userData: "Default" as string
+            userData: []
         }
     },
     methods: {
         async fetchData():Promise<void> {
             try {
-                const response = await axios.get('http://localhost:3000/user/profile');
+                const response = await axios.get('http://localhost:3000/profile');
                 this.userData = response.data;
                 this.loading = false;
             } catch (error) {
