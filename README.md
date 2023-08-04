@@ -1,4 +1,4 @@
-# Demo: Credit Bureau Frontend v0.2
+# Demo: Credit Bureau Frontend v0.5
 
 # Release Details
 #### v1.0
