@@ -2,37 +2,39 @@
     <div class="container">
         <h1>{{ page.pageTitle }}</h1>
         <p>{{ page.content }}</p>
-        <label>{{ userData }}</label>
-        <br>
-        <button
-            type="button"
-            class="btn btn-secondary"
-            @click.prevent="fetchData()"
-        >Get Data</button>
-        
+
+        <div v-if="showProfile">
+            <template v-if="userInfo[0].first_name && userInfo[0].last_name && userInfo[0].occupation">
+                <label>{{ `Name: ${userInfo[0].first_name} ${userInfo[0].last_name}` }}</label><br>
+                <label>{{ `Occupation: ${userInfo[0].occupation}` }}</label><br>
+            </template>
+            <template v-else>
+                <p>Loading user profile...</p>
+            </template>
+        </div>
+
+        <div v-if="showCredit">
+            <label>{{ `Credit Score: ${userInfo.credit_score}` }}</label><br>
+            
+            <button
+                type="button"
+                class="btn btn-secondary"
+                @click.prevent="fetchCredit()"
+            >Get Score</button>
+        </div>        
     </div>
 </template>
 
 <script lang="ts">
 import axios from 'axios';
 export default {
-    props: ['page'],
+    props: ['page', 'userInfo' ,'currentUser', 'showProfile', 'showCredit'],
     data() {
-        return {
-            loading: true,
-            userData: []
-        }
+        return { }
     },
     methods: {
-        async fetchData():Promise<void> {
-            try {
-                const response = await axios.get('http://localhost:3000/profile');
-                this.userData = response.data;
-                this.loading = false;
-            } catch (error) {
-                console.error('Error fetching user profile:', error);
-                this.loading = false;
-            }
+        fetchCredit() {
+
         }
     }
 }

@@ -29,7 +29,7 @@
 
 <script lang="ts">
 export default {
-    props: ['pages','activePage', 'navLinkClick'],
+    props: ['pages','activePage', 'navLinkClick', 'showButton'],
     data() {
         return {
             theme: 'light' as string
