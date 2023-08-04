@@ -12,7 +12,7 @@
 - No User Session  
 ```
 
-### Project setup
+# Project setup
 ```
 npm install
 ```
