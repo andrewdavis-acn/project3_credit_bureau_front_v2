@@ -1,6 +1,5 @@
-# Demo: Credit Bureau Frontend v0.2
-
-## project3_credit_bureau_front_v2
+# Demo: Credit Bureau Frontend
+#### Current Version v0.2
 
 ### Project setup
 ```
