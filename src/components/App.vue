@@ -23,6 +23,7 @@ export default {
   data() {
       return {
           activePage: 0,
+          currentUser: 0,
           pages: [
               {
                   link: {text: 'Home', url: 'index.html'},

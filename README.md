@@ -1,5 +1,12 @@
-# Demo: Credit Bureau Frontend
-#### Current Version v0.2
+# Demo: Credit Bureau Frontend v0.2
+
+# Release Details
+#### v1.0
+- Single User Profile  
+- No User Session  
+#### v2.0
+- Single User Profile  
+- No User Session  
 
 ### Project setup
 ```
