@@ -2,11 +2,15 @@
 
 # Release Details
 #### v1.0
+```
 - Single User Profile  
 - No User Session  
+```
 #### v2.0
+```
 - Single User Profile  
 - No User Session  
+```
 
 ### Project setup
 ```
