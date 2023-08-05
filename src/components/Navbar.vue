@@ -20,7 +20,7 @@
             <form class="d-flex">
                 <button
                     class="btn btn-primary"
-                    @click.prevent="changeTheme()"
+                    @click.prevent="toggleUser()"
                 >Toggle Navbar</button>
             </form>
         </div>
@@ -28,8 +28,9 @@
 </template>
 
 <script lang="ts">
+import { ComponentPublicInstance, getTransitionRawChildren } from 'vue';
 export default {
-    props: ['pages','activePage', 'navLinkClick', 'showButton'],
+    props: ['pages','activePage', 'currentUser' ,'navLinkClick', 'showButton', 'toggleUser'],
     data() {
         return {
             theme: 'light' as string
@@ -44,6 +45,9 @@ export default {
             }
             
             this.theme = theme;
+        },
+        navLinkClick(this: ComponentPublicInstance, index:number) {
+            this.$emit('navLinkClick', index);
         }
     }
 }
