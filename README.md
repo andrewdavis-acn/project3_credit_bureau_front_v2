@@ -8,9 +8,8 @@
 ```
 #### v2.0
 ```
-- Single User Profile  
+- Multiple User Profiles  
 - No User Session  
-- Database Connection
 ```
 
 # Project setup
