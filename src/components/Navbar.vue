@@ -1,6 +1,6 @@
 <template>
     <nav
-        :class="[`navbar-${theme}`, `bg-${theme}`, 'navbar', 'navbar-expand-lg']"
+        :class="[`navbar-light`, `bg-light`, 'navbar', 'navbar-expand-lg']"
     >
         <div class="container-fluid">
             <a class="navbar-brand" href="#" >My Vue</a>
@@ -17,12 +17,12 @@
                     </a>
                 </li>
             </ul>
-            <form class="d-flex">
+            <!-- <form class="d-flex">
                 <button
                     class="btn btn-primary"
                     @click.prevent="toggleUser()"
                 >Toggle Navbar</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 </template>
@@ -37,6 +37,7 @@ export default {
         }
     },
     methods: {
+        /*
         changeTheme() {
             let theme:string = 'light';
 
@@ -45,7 +46,7 @@ export default {
             }
             
             this.theme = theme;
-        },
+        },*/
         navLinkClick(this: ComponentPublicInstance, index:number) {
             this.$emit('navLinkClick', index);
         }
