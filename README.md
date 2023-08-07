@@ -10,6 +10,7 @@
 ```
 - Single User Profile  
 - No User Session  
+- Database Connection
 ```
 
 # Project setup
